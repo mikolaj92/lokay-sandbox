@@ -1,5 +1,5 @@
 # Minimal lokay factory
-Run `factory/tick.sh OWNER/REPO` for one tick; repeat every five minutes.
+Run `factory/tick.sh OWNER/REPO` for one tick; launchd uses StartCalendarInterval, minutes 0,5,...,55.
 Requires Bash, gh, git, jq, pi-classic, and Perl for bounded AI calls.
 Authenticate gh and configure pi-classic before starting.
 The clone defaults to `$HOME/Developer/OSS/<repo>`; override with `FACTORY_CLONE`.
