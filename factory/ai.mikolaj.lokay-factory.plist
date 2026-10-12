@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key><string>ai.mikolaj.lokay-factory</string>
+    <key>StartInterval</key><integer>300</integer>
+    <key>RunAtLoad</key><true/>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string><string>-lc</string>
+        <string>caffeinate -i /Users/mikomac/Developer/OSS/lokay-sandbox/factory/tick.sh mikolaj92/lokay-sandbox</string>
+    </array>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key><string>/Users/mikomac/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key><string>/Users/mikomac</string>
+    </dict>
+    <key>StandardOutPath</key><string>/Users/mikomac/.lokay/logs/factory.out.log</string>
+    <key>StandardErrorPath</key><string>/Users/mikomac/.lokay/logs/factory.err.log</string>
+</dict>
+</plist>
